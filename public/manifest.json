@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Video Thumbnail Generator",
+  "version": "1.0",
+  "description": "Upload videos and generate thumbnails.",
+  "action": {
+    "default_icon": "vite.svg"
+  },
+  "background": {
+    "service_worker": "app.js"
+  },
+  "permissions": ["tabs"]
+}
