@@ -2,6 +2,8 @@
   display: flex;
   gap: 1rem;
   width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .playlist {
@@ -15,8 +17,11 @@
 
 .playlist-item {
   aspect-ratio: 1 / 1;
-  border: 2px solid blue;
+  border: 2px solid #cccccc;
   width: 100%;
+}
+.playlist-item-selected {
+  border: 2px solid #646cff;
 }
 .playlist-item-upload {
   border: 2px dashed #cccccc;
@@ -25,7 +30,7 @@
   cursor: pointer;
 }
 
-.playlist-item-upload p{
+.playlist-item-upload p {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -34,7 +39,7 @@
   margin: 0;
 }
 
-.playlist-item-upload input[type="file"]{
+.playlist-item-upload input[type="file"] {
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -43,8 +48,14 @@
   z-index: 10;
 }
 
+.player-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
 .player {
   width: 100%;
+  height: 60vh;
   aspect-ratio: 16 / 9;
   background-color: black;
 }
